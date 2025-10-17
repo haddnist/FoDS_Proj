@@ -1,0 +1,37 @@
+
+INTERMEDIATE MODEL PERFORMANCE - AIRLINE DATASET
+======================================================================
+
+MODEL: NAIVE_BAYES with TF-IDF + N-grams
+FEATURES: TfidfVectorizer (max_features=15000, ngram_range=(1,2))
+TRAIN/TEST SPLIT: 80/20 (stratified)
+
+OVERALL PERFORMANCE:
+- Accuracy: 0.7133
+- Weighted Precision: 0.7401
+- Weighted Recall: 0.7133
+- Weighted F1-Score: 0.6564
+
+BASELINE COMPARISON:
+- Baseline F1-Score: 0.7332
+- Improvement: -10.47%
+
+DETAILED CLASSIFICATION REPORT:
+              precision    recall  f1-score   support
+
+    negative       0.70      0.99      0.82      1834
+     neutral       0.75      0.21      0.32       617
+    positive       0.88      0.31      0.46       472
+
+    accuracy                           0.71      2923
+   macro avg       0.78      0.50      0.53      2923
+weighted avg       0.74      0.71      0.66      2923
+
+
+CONFUSION MATRIX:
+[[1812   21    1]
+ [ 471  128   18]
+ [ 305   22  145]]
+
+CLASS DISTRIBUTION IN TEST SET:
+{'negative': 1834, 'neutral': 617, 'positive': 472}

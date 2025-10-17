@@ -1,0 +1,38 @@
+PERFORMANCE ANALYSIS:
+- Best performing dataset: Corona (F1: 0.7724)
+- Worst performing dataset: Combined (F1: 0.6631)
+- Performance variation: 0.1092
+
+CLASS IMBALANCE IMPACT:
+- Borderlands: 41.8% majority class
+- Airline: 62.7% majority class
+- Climate: 52.3% majority class
+- Corona: 43.6% majority class
+- Combined: 37.0% majority class
+
+COMMON MISCLASSIFICATION PATTERNS:
+- Borderlands: Most common error is neutral → positive (1026 cases)
+- Airline: Most common error is negative → neutral (357 cases)
+- Climate: Most common error is positive → neutral (1050 cases)
+- Corona: Most common error is positive → neutral (507 cases)
+- Combined: Most common error is positive → neutral (3085 cases)
+
+BASELINE MODEL STRENGTHS:
+- Simple and interpretable (Logistic Regression)
+- Fast training and prediction
+- Good performance on balanced datasets
+- Handles class imbalance with balanced class weights
+
+BASELINE MODEL WEAKNESSES:
+- Limited by Bag-of-Words representation (no word order)
+- Struggles with class imbalance in some datasets
+- No consideration of word relationships or context
+- Vocabulary limited to most frequent 5,000 words
+- May overfit to frequent words
+
+IMPROVEMENT OPPORTUNITIES:
+- Use TF-IDF instead of raw counts
+- Include n-grams (bigrams, trigrams)
+- Try more sophisticated models (SVM, Random Forest)
+- Use word embeddings (Word2Vec, GloVe)
+- Implement ensemble methods

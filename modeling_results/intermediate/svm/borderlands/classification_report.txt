@@ -1,0 +1,37 @@
+
+INTERMEDIATE MODEL PERFORMANCE - BORDERLANDS DATASET
+======================================================================
+
+MODEL: SVM with TF-IDF + N-grams
+FEATURES: TfidfVectorizer (max_features=15000, ngram_range=(1,2))
+TRAIN/TEST SPLIT: 80/20 (stratified)
+
+OVERALL PERFORMANCE:
+- Accuracy: 0.8362
+- Weighted Precision: 0.8365
+- Weighted Recall: 0.8362
+- Weighted F1-Score: 0.8362
+
+BASELINE COMPARISON:
+- Baseline F1-Score: 0.7389
+- Improvement: +13.17%
+
+DETAILED CLASSIFICATION REPORT:
+              precision    recall  f1-score   support
+
+    negative       0.84      0.86      0.85      4374
+     neutral       0.85      0.83      0.84      6044
+    positive       0.81      0.83      0.82      4026
+
+    accuracy                           0.84     14444
+   macro avg       0.83      0.84      0.84     14444
+weighted avg       0.84      0.84      0.84     14444
+
+
+CONFUSION MATRIX:
+[[3742  404  228]
+ [ 500 5008  536]
+ [ 227  471 3328]]
+
+CLASS DISTRIBUTION IN TEST SET:
+{'neutral': 6044, 'negative': 4374, 'positive': 4026}

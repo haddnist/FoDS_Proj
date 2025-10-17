@@ -1,0 +1,20 @@
+SENTIMENT ANALYSIS - COMBINED DATASET
+==================================================
+
+SENTIMENT DISTRIBUTION:
+-------------------------
+POSITIVE: 65,039 (37.0%)
+NEUTRAL: 58,568 (33.3%)
+NEGATIVE: 52,054 (29.6%)
+
+TOTAL SAMPLES: 175,661
+
+TEXT LENGTH ANALYSIS:
+-------------------------
+Overall Average Word Count: 11.9
+Overall Average Character Count: 81.1
+
+Average Word Count by Sentiment:
+NEGATIVE: 12.8 words
+NEUTRAL: 10.7 words
+POSITIVE: 12.2 words

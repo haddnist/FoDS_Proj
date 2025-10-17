@@ -1,0 +1,33 @@
+
+BASELINE MODEL PERFORMANCE - BORDERLANDS DATASET
+============================================================
+
+MODEL: Logistic Regression with Bag-of-Words
+FEATURES: CountVectorizer (max_features=5000)
+TRAIN/TEST SPLIT: 80/20 (stratified)
+
+OVERALL PERFORMANCE:
+- Accuracy: 0.7391
+- Weighted Precision: 0.7449
+- Weighted Recall: 0.7391
+- Weighted F1-Score: 0.7389
+
+DETAILED CLASSIFICATION REPORT:
+              precision    recall  f1-score   support
+
+    negative       0.73      0.79      0.76      4374
+     neutral       0.80      0.68      0.73      6044
+    positive       0.68      0.77      0.72      4026
+
+    accuracy                           0.74     14444
+   macro avg       0.74      0.75      0.74     14444
+weighted avg       0.74      0.74      0.74     14444
+
+
+CONFUSION MATRIX:
+[[3467  505  402]
+ [ 904 4114 1026]
+ [ 396  536 3094]]
+
+CLASS DISTRIBUTION IN TEST SET:
+{'neutral': 6044, 'negative': 4374, 'positive': 4026}

@@ -1,0 +1,37 @@
+
+INTERMEDIATE MODEL PERFORMANCE - CLIMATE DATASET
+======================================================================
+
+MODEL: NAIVE_BAYES with TF-IDF + N-grams
+FEATURES: TfidfVectorizer (max_features=15000, ngram_range=(1,2))
+TRAIN/TEST SPLIT: 80/20 (stratified)
+
+OVERALL PERFORMANCE:
+- Accuracy: 0.6993
+- Weighted Precision: 0.7131
+- Weighted Recall: 0.6993
+- Weighted F1-Score: 0.6796
+
+BASELINE COMPARISON:
+- Baseline F1-Score: 0.6892
+- Improvement: -1.39%
+
+DETAILED CLASSIFICATION REPORT:
+              precision    recall  f1-score   support
+
+    negative       0.89      0.19      0.31       798
+     neutral       0.69      0.60      0.64      3394
+    positive       0.70      0.86      0.77      4591
+
+    accuracy                           0.70      8783
+   macro avg       0.76      0.55      0.57      8783
+weighted avg       0.71      0.70      0.68      8783
+
+
+CONFUSION MATRIX:
+[[ 149  272  377]
+ [  12 2044 1338]
+ [   6  636 3949]]
+
+CLASS DISTRIBUTION IN TEST SET:
+{'positive': 4591, 'neutral': 3394, 'negative': 798}

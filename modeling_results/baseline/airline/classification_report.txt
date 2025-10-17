@@ -1,0 +1,33 @@
+
+BASELINE MODEL PERFORMANCE - AIRLINE DATASET
+============================================================
+
+MODEL: Logistic Regression with Bag-of-Words
+FEATURES: CountVectorizer (max_features=5000)
+TRAIN/TEST SPLIT: 80/20 (stratified)
+
+OVERALL PERFORMANCE:
+- Accuracy: 0.7219
+- Weighted Precision: 0.7600
+- Weighted Recall: 0.7219
+- Weighted F1-Score: 0.7332
+
+DETAILED CLASSIFICATION REPORT:
+              precision    recall  f1-score   support
+
+    negative       0.89      0.74      0.81      1834
+     neutral       0.48      0.67      0.56       617
+    positive       0.64      0.73      0.68       472
+
+    accuracy                           0.72      2923
+   macro avg       0.67      0.71      0.68      2923
+weighted avg       0.76      0.72      0.73      2923
+
+
+CONFUSION MATRIX:
+[[1355  357  122]
+ [ 130  412   75]
+ [  46   83  343]]
+
+CLASS DISTRIBUTION IN TEST SET:
+{'negative': 1834, 'neutral': 617, 'positive': 472}

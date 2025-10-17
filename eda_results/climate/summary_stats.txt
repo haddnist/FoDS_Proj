@@ -1,0 +1,20 @@
+SENTIMENT ANALYSIS - CLIMATE DATASET
+==================================================
+
+SENTIMENT DISTRIBUTION:
+-------------------------
+POSITIVE: 22,957 (52.3%)
+NEUTRAL: 16,969 (38.6%)
+NEGATIVE: 3,988 (9.1%)
+
+TOTAL SAMPLES: 43,914
+
+TEXT LENGTH ANALYSIS:
+-------------------------
+Overall Average Word Count: 9.5
+Overall Average Character Count: 66.3
+
+Average Word Count by Sentiment:
+NEGATIVE: 9.7 words
+NEUTRAL: 9.1 words
+POSITIVE: 9.8 words

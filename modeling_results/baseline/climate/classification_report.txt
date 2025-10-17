@@ -1,0 +1,33 @@
+
+BASELINE MODEL PERFORMANCE - CLIMATE DATASET
+============================================================
+
+MODEL: Logistic Regression with Bag-of-Words
+FEATURES: CountVectorizer (max_features=5000)
+TRAIN/TEST SPLIT: 80/20 (stratified)
+
+OVERALL PERFORMANCE:
+- Accuracy: 0.6822
+- Weighted Precision: 0.7046
+- Weighted Recall: 0.6822
+- Weighted F1-Score: 0.6892
+
+DETAILED CLASSIFICATION REPORT:
+              precision    recall  f1-score   support
+
+    negative       0.41      0.64      0.50       798
+     neutral       0.65      0.68      0.66      3394
+    positive       0.79      0.69      0.74      4591
+
+    accuracy                           0.68      8783
+   macro avg       0.62      0.67      0.63      8783
+weighted avg       0.70      0.68      0.69      8783
+
+
+CONFUSION MATRIX:
+[[ 510  170  118]
+ [ 393 2296  705]
+ [ 355 1050 3186]]
+
+CLASS DISTRIBUTION IN TEST SET:
+{'positive': 4591, 'neutral': 3394, 'negative': 798}

@@ -1,0 +1,20 @@
+SENTIMENT ANALYSIS - AIRLINE DATASET
+==================================================
+
+SENTIMENT DISTRIBUTION:
+-------------------------
+NEGATIVE: 9,168 (62.7%)
+NEUTRAL: 3,084 (21.1%)
+POSITIVE: 2,360 (16.2%)
+
+TOTAL SAMPLES: 14,612
+
+TEXT LENGTH ANALYSIS:
+-------------------------
+Overall Average Word Count: 8.5
+Overall Average Character Count: 55.0
+
+Average Word Count by Sentiment:
+NEGATIVE: 9.5 words
+NEUTRAL: 6.8 words
+POSITIVE: 7.0 words

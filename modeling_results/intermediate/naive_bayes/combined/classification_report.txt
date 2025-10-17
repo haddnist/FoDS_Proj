@@ -1,0 +1,37 @@
+
+INTERMEDIATE MODEL PERFORMANCE - COMBINED DATASET
+======================================================================
+
+MODEL: NAIVE_BAYES with TF-IDF + N-grams
+FEATURES: TfidfVectorizer (max_features=15000, ngram_range=(1,2))
+TRAIN/TEST SPLIT: 80/20 (stratified)
+
+OVERALL PERFORMANCE:
+- Accuracy: 0.6550
+- Weighted Precision: 0.6541
+- Weighted Recall: 0.6550
+- Weighted F1-Score: 0.6539
+
+BASELINE COMPARISON:
+- Baseline F1-Score: 0.6631
+- Improvement: -1.39%
+
+DETAILED CLASSIFICATION REPORT:
+              precision    recall  f1-score   support
+
+    negative       0.67      0.71      0.69     10411
+     neutral       0.63      0.58      0.60     11714
+    positive       0.66      0.68      0.67     13008
+
+    accuracy                           0.66     35133
+   macro avg       0.65      0.66      0.65     35133
+weighted avg       0.65      0.66      0.65     35133
+
+
+CONFUSION MATRIX:
+[[7413 1452 1546]
+ [2027 6764 2923]
+ [1699 2473 8836]]
+
+CLASS DISTRIBUTION IN TEST SET:
+{'positive': 13008, 'neutral': 11714, 'negative': 10411}

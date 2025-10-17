@@ -1,0 +1,24 @@
+
+BASELINE MODEL PERFORMANCE SUMMARY
+============================================================
+
+Model: Logistic Regression with Bag-of-Words (CountVectorizer)
+Features: 5,000 most frequent unigrams
+Train/Test Split: 80/20 (stratified)
+Class Weight: Balanced
+
+PERFORMANCE RANKING (by Weighted F1-Score):
+    Dataset  Test Samples  Accuracy  Weighted F1-Score  Weighted Precision  Weighted Recall
+     Corona          8984    0.7675             0.7724              0.7860           0.7675
+Borderlands         14444    0.7391             0.7389              0.7449           0.7391
+    Airline          2923    0.7219             0.7332              0.7600           0.7219
+    Climate          8783    0.6822             0.6892              0.7046           0.6822
+   Combined         35133    0.6629             0.6631              0.6643           0.6629
+
+KEY INSIGHTS:
+- Best performing dataset: Corona (F1: 0.7724)
+- Worst performing dataset: Combined (F1: 0.6631)
+- Average F1-Score across all datasets: 0.7193
+- Performance range: 0.1092
+
+This establishes our baseline performance for comparison with more advanced models.

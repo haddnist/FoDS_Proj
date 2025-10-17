@@ -1,0 +1,33 @@
+
+BASELINE MODEL PERFORMANCE - CORONA DATASET
+============================================================
+
+MODEL: Logistic Regression with Bag-of-Words
+FEATURES: CountVectorizer (max_features=5000)
+TRAIN/TEST SPLIT: 80/20 (stratified)
+
+OVERALL PERFORMANCE:
+- Accuracy: 0.7675
+- Weighted Precision: 0.7860
+- Weighted Recall: 0.7675
+- Weighted F1-Score: 0.7724
+
+DETAILED CLASSIFICATION REPORT:
+              precision    recall  f1-score   support
+
+    negative       0.82      0.75      0.78      3406
+     neutral       0.57      0.78      0.66      1660
+    positive       0.85      0.78      0.81      3918
+
+    accuracy                           0.77      8984
+   macro avg       0.75      0.77      0.75      8984
+weighted avg       0.79      0.77      0.77      8984
+
+
+CONFUSION MATRIX:
+[[2554  479  373]
+ [ 199 1297  164]
+ [ 367  507 3044]]
+
+CLASS DISTRIBUTION IN TEST SET:
+{'positive': 3918, 'negative': 3406, 'neutral': 1660}

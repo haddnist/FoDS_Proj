@@ -1,0 +1,20 @@
+SENTIMENT ANALYSIS - CORONA DATASET
+==================================================
+
+SENTIMENT DISTRIBUTION:
+-------------------------
+POSITIVE: 19,590 (43.6%)
+NEGATIVE: 17,030 (37.9%)
+NEUTRAL: 8,297 (18.5%)
+
+TOTAL SAMPLES: 44,917
+
+TEXT LENGTH ANALYSIS:
+-------------------------
+Overall Average Word Count: 17.3
+Overall Average Character Count: 125.4
+
+Average Word Count by Sentiment:
+NEGATIVE: 18.1 words
+NEUTRAL: 13.4 words
+POSITIVE: 18.3 words

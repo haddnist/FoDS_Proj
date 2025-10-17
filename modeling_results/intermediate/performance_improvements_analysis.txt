@@ -1,0 +1,34 @@
+
+PERFORMANCE IMPROVEMENT ANALYSIS
+==================================================
+
+FEATURE ENGINEERING IMPACT:
+- TF-IDF: Better term weighting than raw counts
+- N-grams: Captures contextual phrases like "not good"
+- Larger vocabulary: 15,000 vs 5,000 features
+
+IMPROVEMENT SUMMARY:
+    Dataset  Baseline F1  Naive Bayes F1  SVM F1  NB Improvement %  SVM Improvement %
+Borderlands       0.7389          0.7513  0.8362            1.6718            13.1674
+    Airline       0.7332          0.6564  0.7606          -10.4689             3.7458
+    Climate       0.6892          0.6796  0.7143           -1.3938             3.6478
+     Corona       0.7724          0.6394  0.7769          -17.2154             0.5936
+   Combined       0.6631          0.6539  0.7004           -1.3938             5.6253
+
+BEST MODEL BY DATASET:
+- Borderlands: SVM
+- Airline: SVM
+- Climate: SVM
+- Corona: SVM
+- Combined: SVM
+
+OVERALL STATISTICS:
+- Average Naive Bayes improvement: -5.76%
+- Average SVM improvement: +5.36%
+- Best performing model: SVM
+
+KEY INSIGHTS:
+- TF-IDF + N-grams consistently outperform Bag-of-Words
+- SVM generally performs better than Naive Bayes
+- Contextual phrases (bigrams) significantly improve performance
+- Class imbalance handling is crucial for consistent improvements

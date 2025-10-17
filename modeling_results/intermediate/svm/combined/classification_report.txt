@@ -1,0 +1,37 @@
+
+INTERMEDIATE MODEL PERFORMANCE - COMBINED DATASET
+======================================================================
+
+MODEL: SVM with TF-IDF + N-grams
+FEATURES: TfidfVectorizer (max_features=15000, ngram_range=(1,2))
+TRAIN/TEST SPLIT: 80/20 (stratified)
+
+OVERALL PERFORMANCE:
+- Accuracy: 0.7008
+- Weighted Precision: 0.7005
+- Weighted Recall: 0.7008
+- Weighted F1-Score: 0.7004
+
+BASELINE COMPARISON:
+- Baseline F1-Score: 0.6631
+- Improvement: +5.63%
+
+DETAILED CLASSIFICATION REPORT:
+              precision    recall  f1-score   support
+
+    negative       0.71      0.75      0.73     10411
+     neutral       0.67      0.65      0.66     11714
+    positive       0.72      0.70      0.71     13008
+
+    accuracy                           0.70     35133
+   macro avg       0.70      0.70      0.70     35133
+weighted avg       0.70      0.70      0.70     35133
+
+
+CONFUSION MATRIX:
+[[7816 1373 1222]
+ [1755 7638 2321]
+ [1416 2426 9166]]
+
+CLASS DISTRIBUTION IN TEST SET:
+{'positive': 13008, 'neutral': 11714, 'negative': 10411}

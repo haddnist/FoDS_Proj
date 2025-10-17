@@ -1,0 +1,48 @@
+VOCABULARY OVERLAP ANALYSIS
+========================================
+
+Comparing top 100 positive words between:
+- Airline Dataset
+- Corona Dataset
+
+OVERLAP RESULTS:
+- Overlapping words: 35 out of 100
+- Overlap percentage: 35.0%
+
+OVERLAPPING WORDS:
+--------------------
+- best
+- care
+- customer
+- day
+- even
+- first
+- free
+- get
+- go
+- good
+- great
+- help
+- home
+- keep
+- know
+- like
+- make
+- new
+- one
+- please
+- right
+- see
+- service
+- staff
+- still
+- thank
+- thing
+- time
+- today
+- u
+- way
+- week
+- well
+- work
+- would

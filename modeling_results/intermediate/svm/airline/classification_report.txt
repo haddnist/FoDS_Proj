@@ -1,0 +1,37 @@
+
+INTERMEDIATE MODEL PERFORMANCE - AIRLINE DATASET
+======================================================================
+
+MODEL: SVM with TF-IDF + N-grams
+FEATURES: TfidfVectorizer (max_features=15000, ngram_range=(1,2))
+TRAIN/TEST SPLIT: 80/20 (stratified)
+
+OVERALL PERFORMANCE:
+- Accuracy: 0.7598
+- Weighted Precision: 0.7615
+- Weighted Recall: 0.7598
+- Weighted F1-Score: 0.7606
+
+BASELINE COMPARISON:
+- Baseline F1-Score: 0.7332
+- Improvement: +3.75%
+
+DETAILED CLASSIFICATION REPORT:
+              precision    recall  f1-score   support
+
+    negative       0.85      0.84      0.85      1834
+     neutral       0.56      0.57      0.56       617
+    positive       0.68      0.69      0.69       472
+
+    accuracy                           0.76      2923
+   macro avg       0.70      0.70      0.70      2923
+weighted avg       0.76      0.76      0.76      2923
+
+
+CONFUSION MATRIX:
+[[1544  213   77]
+ [ 192  353   72]
+ [  81   67  324]]
+
+CLASS DISTRIBUTION IN TEST SET:
+{'negative': 1834, 'neutral': 617, 'positive': 472}

@@ -1,0 +1,20 @@
+SENTIMENT ANALYSIS - BORDERLANDS DATASET
+==================================================
+
+SENTIMENT DISTRIBUTION:
+-------------------------
+NEUTRAL: 30,218 (41.8%)
+NEGATIVE: 21,868 (30.3%)
+POSITIVE: 20,132 (27.9%)
+
+TOTAL SAMPLES: 72,218
+
+TEXT LENGTH ANALYSIS:
+-------------------------
+Overall Average Word Count: 10.6
+Overall Average Character Count: 67.7
+
+Average Word Count by Sentiment:
+NEGATIVE: 10.6 words
+NEUTRAL: 11.3 words
+POSITIVE: 9.5 words

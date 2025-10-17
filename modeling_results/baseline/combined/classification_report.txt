@@ -1,0 +1,33 @@
+
+BASELINE MODEL PERFORMANCE - COMBINED DATASET
+============================================================
+
+MODEL: Logistic Regression with Bag-of-Words
+FEATURES: CountVectorizer (max_features=5000)
+TRAIN/TEST SPLIT: 80/20 (stratified)
+
+OVERALL PERFORMANCE:
+- Accuracy: 0.6629
+- Weighted Precision: 0.6643
+- Weighted Recall: 0.6629
+- Weighted F1-Score: 0.6631
+
+DETAILED CLASSIFICATION REPORT:
+              precision    recall  f1-score   support
+
+    negative       0.69      0.72      0.70     10411
+     neutral       0.60      0.62      0.61     11714
+    positive       0.70      0.65      0.68     13008
+
+    accuracy                           0.66     35133
+   macro avg       0.66      0.67      0.66     35133
+weighted avg       0.66      0.66      0.66     35133
+
+
+CONFUSION MATRIX:
+[[7487 1763 1161]
+ [1975 7300 2439]
+ [1421 3085 8502]]
+
+CLASS DISTRIBUTION IN TEST SET:
+{'positive': 13008, 'neutral': 11714, 'negative': 10411}

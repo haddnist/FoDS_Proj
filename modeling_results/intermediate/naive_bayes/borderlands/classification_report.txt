@@ -1,0 +1,37 @@
+
+INTERMEDIATE MODEL PERFORMANCE - BORDERLANDS DATASET
+======================================================================
+
+MODEL: NAIVE_BAYES with TF-IDF + N-grams
+FEATURES: TfidfVectorizer (max_features=15000, ngram_range=(1,2))
+TRAIN/TEST SPLIT: 80/20 (stratified)
+
+OVERALL PERFORMANCE:
+- Accuracy: 0.7523
+- Weighted Precision: 0.7546
+- Weighted Recall: 0.7523
+- Weighted F1-Score: 0.7513
+
+BASELINE COMPARISON:
+- Baseline F1-Score: 0.7389
+- Improvement: +1.67%
+
+DETAILED CLASSIFICATION REPORT:
+              precision    recall  f1-score   support
+
+    negative       0.78      0.75      0.76      4374
+     neutral       0.73      0.81      0.77      6044
+    positive       0.77      0.67      0.72      4026
+
+    accuracy                           0.75     14444
+   macro avg       0.76      0.74      0.75     14444
+weighted avg       0.75      0.75      0.75     14444
+
+
+CONFUSION MATRIX:
+[[3287  838  249]
+ [ 607 4901  536]
+ [ 340 1008 2678]]
+
+CLASS DISTRIBUTION IN TEST SET:
+{'neutral': 6044, 'negative': 4374, 'positive': 4026}

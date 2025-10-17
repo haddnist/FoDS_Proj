@@ -1,0 +1,37 @@
+
+INTERMEDIATE MODEL PERFORMANCE - CORONA DATASET
+======================================================================
+
+MODEL: NAIVE_BAYES with TF-IDF + N-grams
+FEATURES: TfidfVectorizer (max_features=15000, ngram_range=(1,2))
+TRAIN/TEST SPLIT: 80/20 (stratified)
+
+OVERALL PERFORMANCE:
+- Accuracy: 0.6684
+- Weighted Precision: 0.6813
+- Weighted Recall: 0.6684
+- Weighted F1-Score: 0.6394
+
+BASELINE COMPARISON:
+- Baseline F1-Score: 0.7724
+- Improvement: -17.22%
+
+DETAILED CLASSIFICATION REPORT:
+              precision    recall  f1-score   support
+
+    negative       0.69      0.72      0.70      3406
+     neutral       0.74      0.19      0.30      1660
+    positive       0.65      0.83      0.73      3918
+
+    accuracy                           0.67      8984
+   macro avg       0.69      0.58      0.58      8984
+weighted avg       0.68      0.67      0.64      8984
+
+
+CONFUSION MATRIX:
+[[2442   50  914]
+ [ 483  315  862]
+ [ 612   58 3248]]
+
+CLASS DISTRIBUTION IN TEST SET:
+{'positive': 3918, 'negative': 3406, 'neutral': 1660}
